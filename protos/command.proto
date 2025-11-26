@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package command;
+
+service CommandService {
+  rpc CommandStream (stream CommandRequest) returns (stream CommandResponse) {}
+}
+
+message CommandRequest {
+  string client_id = 1;
+  string report = 2;
+}
+
+message CommandResponse {
+  string command = 1;
+  bytes encrypted_data = 2;
+}
